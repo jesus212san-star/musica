@@ -1,66 +1,132 @@
-body {
+/* RESET */
+* {
   margin: 0;
-  font-family: Arial;
-  background: #0f172a;
-  color: white;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* FONDO GENERAL */
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  color: #333;
 }
 
 /* HEADER */
 header {
+  width: 90%;
+  margin: 20px auto;
+  background: #e5e7eb;
+  border-radius: 10px;
+  padding: 15px;
   display: flex;
   justify-content: space-between;
-  padding: 15px;
-  background: #020617;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 18px;
 }
 
 nav a {
-  color: white;
-  margin-left: 15px;
+  margin: 0 10px;
   text-decoration: none;
+  color: #555;
 }
 
 nav a:hover {
-  color: #facc15;
+  color: #000;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+/* TARJETAS */
+.card {
+  width: 300px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* IMAGEN */
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* CONTENIDO */
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-content h3 {
+  margin-bottom: 10px;
+  color: #2563eb;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* BOTÓN */
+button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1e40af;
+}
+
+/* REPRODUCTOR */
+.player {
+  width: 80%;
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+audio {
+  width: 100%;
 }
 
 /* HERO */
 .hero {
   text-align: center;
-  padding: 40px;
+  margin-top: 40px;
+  color: white;
 }
 
-/* ARTISTAS */
-.artistas {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
+.hero h2 {
+  font-size: 32px;
 }
 
-.card {
-  background: #1e293b;
-  padding: 15px;
-  border-radius: 15px;
-  text-align: center;
-  width: 200px;
-}
-
-.card img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-button {
+.hero p {
   margin-top: 10px;
-  padding: 10px;
-  border: none;
-  background: #facc15;
-  cursor: pointer;
-  border-radius: 10px;
-}
-
-/* PLAYER */
-.player {
-  text-align: center;
-  padding: 30px;
+  opacity: 0.8;
 }
