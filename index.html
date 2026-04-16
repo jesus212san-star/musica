@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Música Norteña</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>🎵 Norteño Music</h1>
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Artistas</a>
+    <a href="#">Contacto</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Lo mejor de la música norteña</h2>
+  <p>Descubre artistas y canciones populares</p>
+</section>
+
+<section class="artistas">
+  <div class="card">
+    <img src="img/peso-pluma.jpg">
+    <h3>Peso Pluma</h3>
+    <button onclick="reproducir('audio/cancion1.mp3')">▶ Reproducir</button>
+  </div>
+
+  <div class="card">
+    <img src="img/grupo-firme.jpg">
+    <h3>Grupo Firme</h3>
+    <button onclick="reproducir('audio/cancion2.mp3')">▶ Reproducir</button>
+  </div>
+
+  <div class="card">
+    <img src="img/tigres.jpg">
+    <h3>Los Tigres del Norte</h3>
+    <button onclick="reproducir('audio/cancion3.mp3')">▶ Reproducir</button>
+  </div>
+</section>
+
+<section class="player">
+  <h2>🎧 Reproductor</h2>
+  <audio id="audioPlayer" controls></audio>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
